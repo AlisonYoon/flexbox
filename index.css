@@ -1,0 +1,60 @@
+*{margin:0; padding:0; list-style:none; font-family:'Open Sans', sans-serif;}
+#wrap {display:-webkit-box;display:-ms-flexbox;display:flex; -ms-flex-wrap:wrap; flex-wrap:wrap}
+header {color:#fff; display:-webkit-box; display:-ms-flexbox; display:flex; position:relative; width:80%; margin:0 10%; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end}
+header h1 {display:block; height: 95px; width:12.5%; background:#2ecc71; position:absolute; left:0; text-align: center; font-size:2vw; padding-top:30px}
+nav {display:-webkit-box;display:-ms-flexbox;display:flex; height:78px; width:87.5%; background:#2ecc71; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
+nav ul {display:-webkit-box;display:-ms-flexbox;display:flex; font-size:1.3vw}
+nav ul li a{text-decoration: none; color:#fff}
+nav ul:nth-child(1){width:50%; -ms-flex-pack: distribute; justify-content: space-around}
+nav ul:nth-child(2){width:20%; -ms-flex-pack: distribute; justify-content: space-around; margin-right:2%}
+
+section {width: 80%; margin:0 10%; display:-webkit-box; display:-ms-flexbox; display:flex;-ms-flex-wrap: wrap;flex-wrap: wrap}
+section div:nth-child(1){width:50%; height: 405px; background:#8271fe}
+section .divtwo{display:-webkit-box;display:-ms-flexbox;display:flex; width:27.08333%; height:405px; background:#e65d5d; text-align:center; color:#fff; -webkit-box-align: center; -ms-flex-align: center; -ms-grid-row-align: center; align-items: center}
+section .divtwo .trend {width: 60%; margin:0 20%}
+section .divtwo .trend li {margin: 20px 0}
+section .divtwo .trend li:nth-child(1) {height:100px; background:#fedc71;}
+section .divtwo .trend li:nth-child(3) {height:100px; background:#aae0f8;}
+section div:nth-child(3) {width:22.9166%; height:405px; background:#219af7; color:#fff;}
+section div:nth-child(3) h2 {font-size:1.5vw; text-align:center; margin:5vh 0 }
+section div:nth-child(3) ol {width: 60%; margin: 0 20%}
+section div:nth-child(3) ol li {list-style-type:decimal;}
+section div:nth-child(4){width:30%; height:260px; background:#ffc40f; color:#fff}
+section div:nth-child(4) h2, section div:nth-child(5) h2 {font-size:1.85vw; text-align:center; margin:5vh 0 10vh}
+section div:nth-child(4) ul, section div:nth-child(5) ul {width:60%; margin:0 20%}
+section div:nth-child(4) ul li, section div:nth-child(5) ul li{list-style-type: circle}
+section div:nth-child(5) {width:30%; height:260px; background:#a660c2; color:#fff}
+section div:nth-child(6) {width:22.9166%; height:260px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column}
+section div:nth-child(6) div:nth-child(1) {width:100%; height:50%; background:#e6567a; color:#fff; display:-webkit-box; display:-ms-flexbox; display:flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-align: center}
+section div:nth-child(6) div:nth-child(1) p {width:5vw; margin:0 auto}
+section div:nth-child(6) .language {width:100%; height:50%; background:#c44968}
+section div:nth-child(6) .language ul.types {display:-webkit-box;display:-ms-flexbox;display:flex; -ms-flex-pack: distribute; justify-content: space-around; height:2vh; margin: 9vh 0; color:#fff}
+section div:nth-child(7) {width:17.0833%; height:160px; text-align:center;}
+section div:nth-child(7) ul {margin:11vh 0;}
+section div:nth-child(7) ul li {margin: 5vh 0;}
+footer {width:80%; margin:0 10%; background:#474747; color:#fff; padding:3vh 0 3vh 3vw}
+footer p {font-size:.88vw}
+
+
+/*Media Query*/
+@media (max-width: 960px) {
+nav ul:nth-child(2){width:100%; position:absolute; top:0; left:0; border-bottom: .5px solid #f0f0f0; padding:10px 0}
+header h1 {display:block; height: 75px; width:12.5%; background:#2ecc71; position:absolute; left:0; text-align: center; font-size:1.68vw; padding-top:55px}
+nav {display:-webkit-box;display:-ms-flexbox;display:flex; height:78px; width:87.5%; background:#2ecc71; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
+nav ul:nth-child(1){display:block; position:absolute; top: 78px; right:0; width:34%; font-size:2vw; background: #2c3e50; padding:3%}
+nav ul:nth-child(1) li {padding: 5px 0}
+section .divtwo{display:-webkit-box;display:-ms-flexbox;display:flex; width:71.4843%; height:276px; background:#e65d5d; text-align:center; color:#fff; -webkit-box-align: center; -ms-flex-align: center; -ms-grid-row-align: center; align-items: center; -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1}
+section .divtwo .trend {width: 90%; margin:0 5%; display:-webkit-box; display:-ms-flexbox; display:flex; position:relative}
+section .divtwo .trend li {margin: 10px 0;}
+section .divtwo .trend li:nth-child(1), section .divtwo .trend li:nth-child(3) {height:100px; width:40%; margin:0 5%; }
+section .divtwo .trend li:nth-child(1) {background:#fedc71;}
+section .divtwo .trend li:nth-child(3) {background:#aae0f8;}
+section .divtwo .trend li:nth-child(2), section .divtwo .trend li:nth-child(4) {position:absolute; bottom:-38px; left:60%}
+section .divtwo .trend li:nth-child(2) {left:10%}
+section div:nth-child(6) {width:28.5157%; height:276px;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}
+section div:nth-child(1) {width:60.1562%}
+section div:nth-child(3) {width:39.8438%}
+section div:nth-child(4),section div:nth-child(5) {width:45%}
+section div:nth-child(7){width:10%}
+}
+
